@@ -1,0 +1,9 @@
+*.bak
+*.bck
+*.tmp
+*.kicad_prl
+*-save.kicad_sch
+*-save.kicad_pcb
+fp-info-cache
+.DS_Store
+Thumbs.db
