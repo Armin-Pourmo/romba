@@ -1886,37 +1886,33 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Driver_Motor:DRV8871DDA"
+		(symbol "Driver_Motor:TB6612FNG"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -6.35 8.89 0)
+				(at 11.43 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "DRV8871DDA"
-				(at 8.128 8.89 0)
+			(property "Value" "TB6612FNG"
+				(at 11.43 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"
-				(at 6.35 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8871.pdf"
-				(at 6.35 -1.27 0)
+			(property "Footprint" "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
+				(at 33.02 -22.86 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1924,7 +1920,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Brushed DC Motor Driver, PWM Control, 45V, 3.6A, Current limiting, HTSOP-8"
+			(property "Datasheet" "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html"
+				(at 11.43 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Driver IC for Dual DC motor, SSOP-24"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1933,7 +1938,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "H-bridge driver motor current limit"
+			(property "ki_keywords" "H-bridge motor driver"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1942,7 +1947,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Texas*HTSOP*1EP*3.9x4.9mm*P1.27mm*EP2.95x4.9mm*Mask2.4x3.1mm*"
+			(property "ki_fp_filters" "SSOP*5.3x8.2mm*P0.65mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1951,10 +1956,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "DRV8871DDA_0_1"
+			(symbol "TB6612FNG_0_1"
 				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
+					(start -10.16 20.32)
+					(end 10.16 -20.32)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1964,11 +1969,191 @@
 					)
 				)
 			)
-			(symbol "DRV8871DDA_1_1"
+			(symbol "TB6612FNG_1_1"
+				(pin input inverted
+					(at -15.24 10.16 0)
+					(length 5.08)
+					(name "STBY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "IN1"
+					(at -15.24 5.08 0)
+					(length 5.08)
+					(name "PWMA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "PWMB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "AIN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -5.08 0)
+					(length 5.08)
+					(name "AIN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -7.62 0)
+					(length 5.08)
+					(name "BIN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -10.16 0)
+					(length 5.08)
+					(name "BIN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 25.4 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 -25.4 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 25.4 270)
+					(length 5.08)
+					(name "VM1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -25.4 90)
+					(length 5.08)
+					(name "PGND1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1983,17 +2168,18 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "IN2"
+				(pin passive line
+					(at 2.54 -25.4 90)
+					(length 5.08)
+					(hide yes)
+					(name "PGND1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2002,16 +2188,16 @@
 					)
 				)
 				(pin power_in line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "VM"
+					(at 5.08 25.4 270)
+					(length 5.08)
+					(name "VM2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2020,35 +2206,16 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
+					(at 7.62 25.4 270)
+					(length 5.08)
+					(name "VM3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2057,10 +2224,28 @@
 					)
 				)
 				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54)
+					(at 7.62 -25.4 90)
+					(length 5.08)
 					(hide yes)
-					(name "GND"
+					(name "PGND2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 -25.4 90)
+					(length 5.08)
+					(name "PGND2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2076,9 +2261,65 @@
 					)
 				)
 				(pin output line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "OUT1"
+					(at 15.24 10.16 180)
+					(length 5.08)
+					(name "AO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 10.16 180)
+					(length 5.08)
+					(hide yes)
+					(name "AO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 5.08 180)
+					(length 5.08)
+					(name "AO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 5.08 180)
+					(length 5.08)
+					(hide yes)
+					(name "AO2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2094,16 +2335,16 @@
 					)
 				)
 				(pin output line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUT2"
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "BO1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2112,16 +2353,54 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "ILIM"
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(hide yes)
+					(name "BO1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -7.62 180)
+					(length 5.08)
+					(name "BO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -7.62 180)
+					(length 5.08)
+					(hide yes)
+					(name "BO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2344,97 +2623,6 @@
 			(project ""
 				(path "/162ca09a-a45d-4253-9545-f69e74c0a94f"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Driver_Motor:DRV8871DDA")
-		(at 77.47 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "70313715-8f92-407b-91dc-9d5f4aa2b00d")
-		(property "Reference" "U2"
-			(at 79.6133 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DRV8871DDA"
-			(at 79.6133 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"
-			(at 83.82 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8871.pdf"
-			(at 83.82 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Brushed DC Motor Driver, PWM Control, 45V, 3.6A, Current limiting, HTSOP-8"
-			(at 77.47 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "076404a9-6bca-4645-bf37-39812ddcef74")
-		)
-		(pin "9"
-			(uuid "2ba9087d-4ddd-48f4-ad0a-67af0dcd8699")
-		)
-		(pin "6"
-			(uuid "856b8bba-b56a-43c9-82a4-cc64dfaa6088")
-		)
-		(pin "8"
-			(uuid "130d8a78-fb30-4111-a6c9-13ad743f275d")
-		)
-		(pin "4"
-			(uuid "db0c799c-aea6-4acb-8a66-0cd1d828987b")
-		)
-		(pin "7"
-			(uuid "3a4d3ef2-6812-4887-b7a4-88cd6a60d8d9")
-		)
-		(pin "2"
-			(uuid "027ea51a-fd6c-4488-8945-d6834687dcde")
-		)
-		(pin "3"
-			(uuid "a8f9cfb0-cc80-4708-ae7c-f81ea74a4391")
-		)
-		(pin "5"
-			(uuid "e107e61a-7d85-4164-9a1b-d81454649a0f")
-		)
-		(instances
-			(project ""
-				(path "/162ca09a-a45d-4253-9545-f69e74c0a94f"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -2912,97 +3100,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Driver_Motor:DRV8871DDA")
-		(at 77.47 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d89a428d-bf67-4e2e-ade4-bcf8caa04ff6")
-		(property "Reference" "U3"
-			(at 79.6133 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DRV8871DDA"
-			(at 79.6133 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:Texas_HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"
-			(at 83.82 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8871.pdf"
-			(at 83.82 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Brushed DC Motor Driver, PWM Control, 45V, 3.6A, Current limiting, HTSOP-8"
-			(at 77.47 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aa3e78c1-3e66-45f1-bdd1-00c88e19bc18")
-		)
-		(pin "9"
-			(uuid "75c27f85-dd59-4c3b-a9e7-44934708421a")
-		)
-		(pin "6"
-			(uuid "a76ecb0c-10dd-4398-824e-2afb2e627186")
-		)
-		(pin "8"
-			(uuid "a5e46795-4f4f-4900-8c0a-ee711ed23b2b")
-		)
-		(pin "4"
-			(uuid "6c66c347-7e5a-4efd-a310-8fcff6cb856d")
-		)
-		(pin "7"
-			(uuid "a4020e5d-5843-4a86-87d2-cab33ed6d8f9")
-		)
-		(pin "2"
-			(uuid "3fff2ed7-c807-45e4-a26b-457fb6461490")
-		)
-		(pin "3"
-			(uuid "bb964339-a27b-44b6-9df4-6adff45e6ff9")
-		)
-		(pin "5"
-			(uuid "83c159c6-719e-43a8-9a69-d095b891e6eb")
-		)
-		(instances
-			(project "Romba"
-				(path "/162ca09a-a45d-4253-9545-f69e74c0a94f"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x06_Socket")
 		(at 189.23 96.52 0)
 		(unit 1)
@@ -3079,6 +3176,142 @@
 			(project ""
 				(path "/162ca09a-a45d-4253-9545-f69e74c0a94f"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_Motor:TB6612FNG")
+		(at 49.53 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9b5d735-49bc-4b22-957f-ab6fab5dc8e7")
+		(property "Reference" "U2"
+			(at 59.2933 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TB6612FNG"
+			(at 59.2933 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
+			(at 82.55 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html"
+			(at 60.96 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Driver IC for Dual DC motor, SSOP-24"
+			(at 49.53 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "19"
+			(uuid "9366b886-c058-4693-adce-765d2527f734")
+		)
+		(pin "18"
+			(uuid "825b9cfc-4e4d-450b-a93e-30d5111cfa5c")
+		)
+		(pin "15"
+			(uuid "a46e1dea-3812-4495-a929-9d88b1e1e08e")
+		)
+		(pin "8"
+			(uuid "f7852ed1-ed84-4bf7-950a-afbced9d9736")
+		)
+		(pin "17"
+			(uuid "02cababc-66c8-4710-9918-62c1e0c9a9ed")
+		)
+		(pin "2"
+			(uuid "76b73084-16bd-4c2f-b960-6ceb6cbf29a0")
+		)
+		(pin "13"
+			(uuid "7fcede5a-1eb1-4f2c-8f67-3edb8a81729a")
+		)
+		(pin "16"
+			(uuid "07a44c6c-5a55-4f14-b7bd-8467abce2116")
+		)
+		(pin "9"
+			(uuid "da4d62e5-2e88-4390-8e6a-7cf46e266409")
+		)
+		(pin "4"
+			(uuid "a6b626e8-594d-4fa7-885c-d39d0a7dfadc")
+		)
+		(pin "1"
+			(uuid "ffe68db8-c6d4-46a1-9582-a3034eb1ad4f")
+		)
+		(pin "12"
+			(uuid "d4a78bda-b202-4d77-bc9c-a6ded08eb888")
+		)
+		(pin "20"
+			(uuid "e5dc891c-53b8-4834-a61b-5b43089e2d1d")
+		)
+		(pin "23"
+			(uuid "d55a10e2-b5ae-45ea-be7e-aeda4f66567e")
+		)
+		(pin "24"
+			(uuid "c35aa15d-68f3-482b-862e-7b71fa0911ef")
+		)
+		(pin "10"
+			(uuid "0543f0ae-0a40-46f3-950d-3972de71cec8")
+		)
+		(pin "11"
+			(uuid "e8b9705d-1187-4f1d-8fbb-d6a2c0da9ce5")
+		)
+		(pin "7"
+			(uuid "e98d928a-5efc-4dc9-8de7-8fa3bc7b321a")
+		)
+		(pin "6"
+			(uuid "6c04968c-a476-471d-8bdc-32039691d46c")
+		)
+		(pin "3"
+			(uuid "1ff17fde-be5d-463b-ba43-e7406ea84f94")
+		)
+		(pin "22"
+			(uuid "120a8d5a-0c5a-44c7-a7b1-dc70fa36f78f")
+		)
+		(pin "21"
+			(uuid "2a9cad08-af10-4f9d-8b3e-7a05341a2822")
+		)
+		(pin "14"
+			(uuid "703b3bc6-455f-458e-9c29-0405cbe56403")
+		)
+		(pin "5"
+			(uuid "ba460ca2-c1a5-430c-b5bb-81ba27cfa183")
+		)
+		(instances
+			(project ""
+				(path "/162ca09a-a45d-4253-9545-f69e74c0a94f"
+					(reference "U2")
 					(unit 1)
 				)
 			)
