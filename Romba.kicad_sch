@@ -7138,7 +7138,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Battery:BatteryHolder_Keystone_590"
+		(property "Footprint" "Amazon ESP32:MODULE_ESP32-DEVKITC-32D"
 			(at 132.08 85.09 0)
 			(effects
 				(font
