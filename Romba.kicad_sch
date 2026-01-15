@@ -3046,7 +3046,7 @@
 		)
 		(uuid "2e52e81b-071d-4741-9daf-d3e845663868")
 	)
-	(label "EncoderB_L"
+	(label "EncoderB_R"
 		(at 111.76 72.39 180)
 		(effects
 			(font
@@ -3055,6 +3055,16 @@
 			(justify right bottom)
 		)
 		(uuid "2f2cf476-3773-492b-a4ad-b342452e7ca6")
+	)
+	(label "PWM2_L"
+		(at 111.76 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "36947a90-3516-436b-a6ee-9709265df538")
 	)
 	(label "Ignore"
 		(at 182.88 104.14 180)
@@ -3086,15 +3096,15 @@
 		)
 		(uuid "420a8541-c8ef-468e-bd09-1fa622894b70")
 	)
-	(label "PWM1_R"
-		(at 111.76 87.63 180)
+	(label "PWM2_R"
+		(at 111.76 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "465c8252-1360-4a7c-b7b0-f52bff7499de")
+		(uuid "4a5fec4b-36c8-4c08-a69e-e4b100c1b76b")
 	)
 	(label "PWM1_R"
 		(at 58.42 62.23 180)
@@ -3126,6 +3136,16 @@
 		)
 		(uuid "65e5c416-598e-4070-a320-e7dbd54c1a82")
 	)
+	(label "PWM1_R"
+		(at 111.76 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6c67a90f-7df3-4d38-8879-91b28dd75884")
+	)
 	(label "Gyro_REST"
 		(at 182.88 74.93 180)
 		(effects
@@ -3156,7 +3176,7 @@
 		)
 		(uuid "72571f46-1651-4f78-89f0-f7d3d5ff5f10")
 	)
-	(label "EncoderB_L"
+	(label "EncoderB_R"
 		(at 59.69 140.97 180)
 		(effects
 			(font
@@ -3216,15 +3236,15 @@
 		)
 		(uuid "8c5677cc-1021-4b72-8fa6-fa3f9c057da3")
 	)
-	(label "PWM2_L"
-		(at 111.76 85.09 180)
+	(label "PWM1_L"
+		(at 111.76 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "98a44fad-2d0b-4d80-9217-491f4b1110e5")
+		(uuid "9ed617f2-e0e7-48e2-94bb-9e6a8b10eb23")
 	)
 	(label "LiDAR_GND"
 		(at 190.5 86.36 0)
@@ -3365,26 +3385,6 @@
 			(justify right bottom)
 		)
 		(uuid "b73c4fe9-14e9-4a2f-bbe2-6209b2742a1c")
-	)
-	(label "PWM1_L"
-		(at 111.76 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ba157b45-af54-46b0-b764-033acef60f71")
-	)
-	(label "PWM2_R"
-		(at 111.76 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bed38efd-e0d8-46db-bc6b-9db7dd226ca8")
 	)
 	(label "5V_Bus"
 		(at 222.25 88.9 180)
